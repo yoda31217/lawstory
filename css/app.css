@@ -1,0 +1,14 @@
+#header_wrapper {
+    background: url('../img/header_bg3c.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/header_bg.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/header_bg.jpg', sizingMethod='scale')";
+}
+
+#footer_wrapper {
+    background-color: #f0f0f0;
+}
