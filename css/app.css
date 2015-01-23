@@ -12,3 +12,11 @@
 #footer_wrapper {
     background-color: #f0f0f0;
 }
+
+.container-wide {
+    max-width: 970px !important;
+}
+
+.container {
+    max-width: 750px;
+}
