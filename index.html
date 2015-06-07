@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DOKAZ</title>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,11 +41,74 @@
 </head>
 <body>
 
-<div class="container">
-    header
+<div class="modal" id="law-location-modal" tabindex="-1" role="dialog" aria-labelledby="law-location-modal-label"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="law-location-modal-label">Как нас найти</h4>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.7490858075194!2d34.80226350000001!3d50.9098587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41290220bcb33995%3A0xc4ae324cd5c5081e!2sBjelins&#39;koho+St%2C+3%2C+Sumy%2C+Sums&#39;ka+oblast!5e0!3m2!1sen!2sua!4v1433673571623"
+                        width="568" height="450" frameborder="0" style="border:0"></iframe>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="background-img-1">
+<div id="law-header" class="container law-color-1">
+    <a id="law-header-logo" class="pull-left" href="index.html"><img src="img/logo.png" alt="Логотип" class="logo"></a>
+
+    <div id="law-header-title-wrapper" class="pull-left">
+        <h1>D O K A Z</h1>
+
+        <h3 id="law-header-subtitle">юридичні послуги</h3>
+    </div>
+
+    <div class="pull-right">
+        <h4><img src="img/call_logo.png"/> +38 (099) 098 93 90</h4>
+        <h4>
+            <img src="img/mail_logo.png"/> oles.lukyanenko@gmail.com
+        </h4>
+        <h4>
+            <img src="img/facebook_logo.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+        </h4>
+        <h4>
+            <img src="img/map_logo.png"/> <a data-toggle="modal" data-target="#law-location-modal">ул.
+            Белинского 3</a>
+        </h4>
+    </div>
+</div>
+
+<div id="law-menu" class="law-color-1">
+
+    <hr/>
+
+    <div class="container">
+        <ul class="list-inline">
+            <li>
+                <h4><a href="index.html">ГЛАВНАЯ</a></h4>
+            </li>
+            <li>
+                <h4><a href="index.html">ЦЕНЫ</a></h4>
+            </li>
+            <li>
+                <h4><a href="index.html">НАША КОМАНДА</a></h4>
+            </li>
+            <li>
+                <h4><a href="index.html">КОНТАКТЫ</a></h4>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="law-background-color-1">
+
+    <br>
+
     <div class="container">
         <div id="features-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
@@ -50,14 +134,14 @@
 
 
 <div class="container">
-    <h1>Кто мы?</h1>
+    <h1 class="law-color-1">Кто мы</h1>
 
     <p>Мы молодая, профессиональная и амбициозная юридическая фирма, которая предоставляет широкий спектр юридических
         услуг для частных и корпоративных клиентов. </p>
 
     <hr/>
 
-    <h2>Чем будем полезны?</h2>
+    <h2 class="law-color-1">Чем будем полезны</h2>
 
     <ul>
         <li>Оформление искового заявления;</li>
@@ -71,7 +155,7 @@
 
     <hr/>
 
-    <h2>Чем занимаемся?</h2>
+    <h2 class="law-color-1">Чем занимаемся</h2>
 
     <p>Мы помогаем вам решить проблемы в судебном и досудебном порядке в любой сфере права:</p>
 
@@ -87,23 +171,67 @@
 
     <hr/>
 
-    <h2>Почему мы?</h2>
+    <h2 class="law-color-1">Почему мы</h2>
 
     <div class="row text-center">
         <div class="col-md-4">
+            <img src="img/economy_icon.png"/>
             <h4>Экономия</h4>
 
             <p>Оплата нашей работы будет взыскана с ответчика</p>
         </div>
         <div class="col-md-4">
+            <img src="img/guarantee_icon.png"/>
             <h4>Гарантии</h4>
 
             <p>Выполняем работу в точно оговоренный срок</p>
         </div>
         <div class="col-md-4">
+            <img src="img/result_icon.png"/>
             <h4>Результат</h4>
 
             <p>Вознаграждение только за положительное решение вопроса.</p>
+        </div>
+    </div>
+
+    <hr/>
+
+    <h2 class="law-color-1">Примеры наших побед</h2>
+
+    <br>
+
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div>
+                <a target="_blank" href="http://www.reyestr.court.gov.ua/Review/30529250">
+                    <img src="img/registry_icon_1.png" class="law-registry-icon img-thumbnail"/>
+                </a>
+            </div>
+            <br>
+
+            <p>Решение о прекращении договора поручительства с банком. Устояло во всех инстанциях. </p>
+        </div>
+        <div class="col-md-4">
+            <div>
+                <a target="_blank" href="http://www.reyestr.court.gov.ua/Review/28374401">
+                    <img src="img/registry_icon_2.png" class="law-registry-icon img-thumbnail"/>
+                </a>
+            </div>
+            <br>
+
+            <p>Решение о признании договора ипотеки недействительным. Дело пересматривалось в связи с вновь выявлеными
+                обстоятельствами - выиграным административным делом.</p>
+        </div>
+        <div class="col-md-4">
+            <div>
+                <a target="_blank" href="http://www.reyestr.court.gov.ua/Review/44362527">
+                    <img src="img/registry_icon_3.png" class="law-registry-icon img-thumbnail"/>
+                </a>
+            </div>
+            <br>
+
+            <p>Дело о защите прав потребителя туристических услуг против туроператора "Ньюз Тревел". Сумма долга
+                увеличелась в три раза.</p>
         </div>
     </div>
 
@@ -111,42 +239,46 @@
 <br>
 <br>
 
-<div class="background-color-1">
+<div id="law-footer" class="law-background-color-1 law-color-1">
     <div class="container">
         <br>
-        <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a href="#">Про нас</a></li>
-            <li role="presentation" class="dropdown dropup">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                    Для частных лиц <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Развод</a></li>
-                    <li><a href="#">Наследство</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">ДТП</a></li>
-                    <li><a href="#">Трудовые споры</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Взыскание долга</a></li>
-                    <li><a href="#">Банковские споры</a></li>
-                </ul>
-            </li>
-            <li role="presentation" class="dropdown dropup">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                    Для юридических лиц и компаний <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Регистрация предприятий</a></li>
-                    <li><a href="#">Ликвидация предприятий</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Открытие и закрытие ФОП</a></li>
-                </ul>
-            </li>
-            <li role="presentation"><a href="#">Контакты</a></li>
-        </ul>
-        <h5 class="text-center">
-            <small>© 2015 Law Story, Inc.</small>
-        </h5>
+
+        <div class="container">
+            <ul class="list-unstyled pull-left">
+                <li>
+                    <h4><a href="index.html">ГЛАВНАЯ</a></h4>
+                </li>
+                <li>
+                    <h4><a href="index.html">ЦЕНЫ</a></h4>
+                </li>
+                <li>
+                    <h4><a href="index.html">НАША КОМАНДА</a></h4>
+                </li>
+                <li>
+                    <h4><a href="index.html">КОНТАКТЫ</a></h4>
+                </li>
+            </ul>
+
+            <div class="pull-right">
+                <h4><img src="img/call_logo.png"/> +38 (099) 098 93 90</h4>
+                <h4>
+                    <img src="img/mail_logo.png"/> oles.lukyanenko@gmail.com
+                </h4>
+                <h4>
+                    <img src="img/facebook_logo.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                </h4>
+                <h4>
+                    <img src="img/map_logo.png"/> <a class="law-location" data-toggle="modal"
+                                                     data-target="#law-location-modal">ул. Белинского 3</a>
+                </h4>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h5 class="text-center law-color-1">© D O K A Z</h5>
+
         <br>
         <br>
         <br>

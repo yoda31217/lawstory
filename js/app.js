@@ -6,5 +6,9 @@
         $('#features-carousel').carousel('next');
     });
 
+    //$('.law-location').click(function () {
+    //
+    //});
+
 })();
 

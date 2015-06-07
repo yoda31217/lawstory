@@ -1,14 +1,91 @@
-.background-img-1 {
-    background: url('../img/background_01.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/background_01.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/background_01.jpg', sizingMethod='scale')";
+.container {
+    max-width: 800px !important;
 }
 
-.background-color-1 {
+/**/
+
+a {
+    color: inherit !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #f7ac01 !important;
+}
+
+/**/
+
+.law-background-color-1 {
     background-color: #f0f0f0;
 }
+
+.law-background-color-2 {
+    background-color: #ffffff;
+}
+
+.law-color-1 {
+    color: #535456;
+}
+
+.law-color-2 {
+    color: #f7ac01;
+}
+
+/**/
+
+#law-header #law-header-logo {
+    margin: 15px;
+}
+
+#law-header #law-header-subtitle {
+    font-size: 20px;
+}
+
+#law-header #law-header-title-wrapper {
+    padding-top: 12px;
+}
+
+/**/
+
+#law-menu li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#law-menu hr {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#law-menu ul {
+    margin-bottom: 5px;
+}
+
+#law-menu a {
+    text-decoration: none !important;
+}
+
+/**/
+
+#features-carousel {
+    cursor: pointer;
+}
+
+/**/
+
+#law-footer li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#law-footer ul a {
+    text-decoration: none !important;
+}
+
+/**/
+
+.law-registry-icon {
+    width: 150px;
+}
+
