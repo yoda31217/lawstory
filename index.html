@@ -52,36 +52,54 @@
                 <h4 class="modal-title" id="law-location-modal-label">Как нас найти</h4>
             </div>
             <div class="modal-body">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.7490858075194!2d34.80226350000001!3d50.9098587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41290220bcb33995%3A0xc4ae324cd5c5081e!2sBjelins&#39;koho+St%2C+3%2C+Sumy%2C+Sums&#39;ka+oblast!5e0!3m2!1sen!2sua!4v1433673571623"
-                        width="568" height="450" frameborder="0" style="border:0"></iframe>
+                <iframe id="law-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.7490858075194!2d34.80226350000001!3d50.9098587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41290220bcb33995%3A0xc4ae324cd5c5081e!2sBjelins&#39;koho+St%2C+3%2C+Sumy%2C+Sums&#39;ka+oblast!5e0!3m2!1sen!2sua!4v1433673571623"
+                        height="360" frameborder="0" style="border:0"></iframe>
             </div>
         </div>
     </div>
 </div>
 
-<div id="law-header" class="container law-color-1">
-    <a id="law-header-logo" class="pull-left" href="index.html"><img src="img/logo.png" alt="Логотип" class="logo"></a>
+<div id="law-header" class="law-color-1">
+    <div class="container">
+        <img src="img/logo_with_text.png" alt="Логотип" class="hidden-xs pull-left law-header-logo">
+        <img src="img/logo_with_text.png" alt="Логотип"
+             class="img-responsive center-block visible-xs-block law-header-logo">
 
-    <div id="law-header-title-wrapper" class="pull-left">
-        <h1>D O K A Z</h1>
-
-        <h3 id="law-header-subtitle">юридичні послуги</h3>
+        <div class="pull-right hidden-xs">
+            <h4><img src="img/call_icon.png"/> +38 (099) 098 93 90</h4>
+            <h4>
+                <img src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
+            </h4>
+            <h4>
+                <img src="img/facebook_icon.png"/> <a target="_blank"
+                                                      href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+            </h4>
+            <h4>
+                <img src="img/map_icon.png"/> <a data-toggle="modal"
+                                                 data-target="#law-location-modal">г. Сумы, ул. Белинского 3</a>
+            </h4>
+        </div>
     </div>
 
-    <div class="pull-right">
-        <h4><img src="img/call_logo.png"/> +38 (099) 098 93 90</h4>
-        <h4>
-            <img src="img/mail_logo.png"/> oles.lukyanenko@gmail.com
-        </h4>
-        <h4>
-            <img src="img/facebook_logo.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
-        </h4>
-        <h4>
-            <img src="img/map_logo.png"/> <a data-toggle="modal" data-target="#law-location-modal">ул.
-            Белинского 3</a>
-        </h4>
+
+    <div class="container">
+        <div class="visible-xs-block">
+            <h4><img src="img/call_icon.png"/> +38 (099) 098 93 90</h4>
+            <h4>
+                <img src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
+            </h4>
+            <h4>
+                <img src="img/facebook_icon.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+            </h4>
+            <h4>
+                <img src="img/map_icon.png"/> <a class="law-location" data-toggle="modal"
+                                                 data-target="#law-location-modal">г. Сумы, ул. Белинского 3</a>
+            </h4>
+        </div>
     </div>
 </div>
+
 
 <div id="law-menu" class="law-color-1">
 
@@ -100,6 +118,9 @@
             </li>
             <li>
                 <h4><a href="index.html">КОНТАКТЫ</a></h4>
+            </li>
+            <li>
+                <h4><a href="index.html">БЛОГ</a></h4>
             </li>
         </ul>
     </div>
@@ -144,12 +165,12 @@
     <h2 class="law-color-1">Чем будем полезны</h2>
 
     <ul>
-        <li>Оформление искового заявления;</li>
-        <li>Составление апелляционных и кассационных жалоб;</li>
-        <li>Представление интересов в суде всех инстанций;</li>
-        <li>Подготовка заявлений в правоохранительные органы и прокуратуру;</li>
+        <li>Оформление искового заявления</li>
+        <li>Составление апелляционных и кассационных жалоб</li>
+        <li>Представление интересов в судах всех инстанций</li>
+        <li>Подготовка заявлений в правоохранительные органы и прокуратуру</li>
         <li>Консультации по любым юридическим вопросам</li>
-        <li>Регистрации предприятий;</li>
+        <li>Регистрации предприятий</li>
         <li>Составление договоров</li>
     </ul>
 
@@ -160,13 +181,13 @@
     <p>Мы помогаем вам решить проблемы в судебном и досудебном порядке в любой сфере права:</p>
 
     <ul>
-        <li>хозяйственном;</li>
-        <li>гражданском;</li>
-        <li>трудовом;</li>
-        <li>семейном;</li>
-        <li>налоговом;</li>
-        <li>земельном;</li>
-        <li>банковском;</li>
+        <li>хозяйственном</li>
+        <li>гражданском</li>
+        <li>трудовом</li>
+        <li>семейном</li>
+        <li>налоговом</li>
+        <li>земельном</li>
+        <li>банковском</li>
     </ul>
 
     <hr/>
@@ -174,23 +195,23 @@
     <h2 class="law-color-1">Почему мы</h2>
 
     <div class="row text-center">
-        <div class="col-md-4">
+        <div class="col-sm-4">
             <img src="img/economy_icon.png"/>
             <h4>Экономия</h4>
 
             <p>Оплата нашей работы будет взыскана с ответчика</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4">
             <img src="img/guarantee_icon.png"/>
             <h4>Гарантии</h4>
 
             <p>Выполняем работу в точно оговоренный срок</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4">
             <img src="img/result_icon.png"/>
             <h4>Результат</h4>
 
-            <p>Вознаграждение только за положительное решение вопроса.</p>
+            <p>Вознаграждение только за положительное решение вопроса</p>
         </div>
     </div>
 
@@ -201,7 +222,7 @@
     <br>
 
     <div class="row text-center">
-        <div class="col-md-4">
+        <div class="col-sm-4">
             <div>
                 <a target="_blank" href="http://www.reyestr.court.gov.ua/Review/30529250">
                     <img src="img/registry_icon_1.png" class="law-registry-icon img-thumbnail"/>
@@ -209,9 +230,9 @@
             </div>
             <br>
 
-            <p>Решение о прекращении договора поручительства с банком. Устояло во всех инстанциях. </p>
+            <p>Решение о прекращении договора поручительства с банком. Устояло во всех инстанциях.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4">
             <div>
                 <a target="_blank" href="http://www.reyestr.court.gov.ua/Review/28374401">
                     <img src="img/registry_icon_2.png" class="law-registry-icon img-thumbnail"/>
@@ -219,10 +240,9 @@
             </div>
             <br>
 
-            <p>Решение о признании договора ипотеки недействительным. Дело пересматривалось в связи с вновь выявлеными
-                обстоятельствами - выиграным административным делом.</p>
+            <p>Решение о признании договора ипотеки с банком недействительным.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4">
             <div>
                 <a target="_blank" href="http://www.reyestr.court.gov.ua/Review/44362527">
                     <img src="img/registry_icon_3.png" class="law-registry-icon img-thumbnail"/>
@@ -231,7 +251,7 @@
             <br>
 
             <p>Дело о защите прав потребителя туристических услуг против туроператора "Ньюз Тревел". Сумма долга
-                увеличелась в три раза.</p>
+                увеличилась в три раза.</p>
         </div>
     </div>
 
@@ -240,51 +260,71 @@
 <br>
 
 <div id="law-footer" class="law-background-color-1 law-color-1">
+    <br>
+
     <div class="container">
-        <br>
+        <ul class="list-unstyled pull-left">
+            <li>
+                <h4><a href="index.html">ГЛАВНАЯ</a></h4>
+            </li>
+            <li>
+                <h4><a href="index.html">ЦЕНЫ</a></h4>
+            </li>
+            <li>
+                <h4><a href="index.html">НАША КОМАНДА</a></h4>
+            </li>
+            <li>
+                <h4><a href="index.html">КОНТАКТЫ</a></h4>
+            </li>
+            <li>
+                <h4><a href="index.html">БЛОГ</a></h4>
+            </li>
+        </ul>
 
-        <div class="container">
-            <ul class="list-unstyled pull-left">
-                <li>
-                    <h4><a href="index.html">ГЛАВНАЯ</a></h4>
-                </li>
-                <li>
-                    <h4><a href="index.html">ЦЕНЫ</a></h4>
-                </li>
-                <li>
-                    <h4><a href="index.html">НАША КОМАНДА</a></h4>
-                </li>
-                <li>
-                    <h4><a href="index.html">КОНТАКТЫ</a></h4>
-                </li>
-                <li>
-                </li>
-                <li>
-                    <br>
-                    <h6>© 2015. D O K A Z</h6>
-                </li>
-            </ul>
-
-            <div class="pull-right">
-                <h4><img src="img/call_logo.png"/> +38 (099) 098 93 90</h4>
-                <h4>
-                    <img src="img/mail_logo.png"/> oles.lukyanenko@gmail.com
-                </h4>
-                <h4>
-                    <img src="img/facebook_logo.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
-                </h4>
-                <h4>
-                    <img src="img/map_logo.png"/> <a class="law-location" data-toggle="modal"
-                                                     data-target="#law-location-modal">ул. Белинского 3</a>
-                </h4>
-            </div>
+        <div class="pull-right hidden-xs">
+            <h4><img src="img/call_icon.png"/> +38 (099) 098 93 90</h4>
+            <h4>
+                <img src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
+            </h4>
+            <h4>
+                <img src="img/facebook_icon.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+            </h4>
+            <h4>
+                <img src="img/map_icon.png"/> <a class="law-location" data-toggle="modal"
+                                                 data-target="#law-location-modal">г. Сумы, ул. Белинского 3</a>
+            </h4>
         </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
     </div>
+
+    <div class="container">
+        <div class="visible-xs-block">
+            <h4><img src="img/call_icon.png"/> +38 (099) 098 93 90</h4>
+            <h4>
+                <img src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
+            </h4>
+            <h4>
+                <img src="img/facebook_icon.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+            </h4>
+            <h4>
+                <img src="img/map_icon.png"/> <a class="law-location" data-toggle="modal"
+                                                 data-target="#law-location-modal">г. Сумы, ул. Белинского 3</a>
+            </h4>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <br>
+        <h6 class="text-center">© 2015. D O K A Z</h6>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

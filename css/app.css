@@ -34,16 +34,9 @@ a:hover {
 
 /**/
 
-#law-header #law-header-logo {
-    margin: 15px;
-}
-
-#law-header #law-header-subtitle {
-    font-size: 20px;
-}
-
-#law-header #law-header-title-wrapper {
-    padding-top: 12px;
+#law-header .law-header-logo {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /**/
@@ -74,11 +67,6 @@ a:hover {
 
 /**/
 
-#law-footer li {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 #law-footer ul a {
     text-decoration: none !important;
 }
@@ -87,5 +75,11 @@ a:hover {
 
 .law-registry-icon {
     width: 150px;
+}
+
+/**/
+
+#law-map {
+    width: 100%;
 }
 
