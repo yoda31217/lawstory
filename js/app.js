@@ -1,14 +1,14 @@
-(function () {
+angular.module('lawApp', ['ngRoute']).
+    config(['$routeProvider', function ($routeProvider) {
 
-    $('#features-carousel').carousel({
-        interval: 4000
-    }).click(function () {
-        $('#features-carousel').carousel('next');
-    });
+        $routeProvider.when('/main-view', {
+            templateUrl: 'main-view.html',
+        }).when('/price-view', {
+            templateUrl: 'price-view.html',
+        }).when('/team-view', {
+            templateUrl: 'team-view.html',
+        }).otherwise({redirectTo: '/main-view'});
 
-    //$('.law-location').click(function () {
-    //
-    //});
+    }]);
 
-})();
 

@@ -35,8 +35,8 @@ a:hover {
 /**/
 
 #law-header .law-header-logo {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    /*margin-top: 10px;*/
+    /*margin-bottom: 20px;*/
 }
 
 /**/
@@ -81,5 +81,14 @@ a:hover {
 
 #law-map {
     width: 100%;
+}
+
+/**/
+
+img.law-member-img {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 200px;
 }
 
