@@ -7,6 +7,8 @@ angular.module('lawApp', ['ngRoute']).
             templateUrl: 'price-view.html',
         }).when('/team-view', {
             templateUrl: 'team-view.html',
+        }).when('/contacts-view', {
+            templateUrl: 'contacts-view.html',
         }).otherwise({redirectTo: '/main-view'});
 
     }]);

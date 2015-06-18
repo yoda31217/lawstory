@@ -35,8 +35,13 @@ a:hover {
 /**/
 
 #law-header .law-header-logo {
-    /*margin-top: 10px;*/
-    /*margin-bottom: 20px;*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#law-header .law-header-contacts-big {
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 /**/
@@ -79,16 +84,21 @@ a:hover {
 
 /**/
 
-#law-map {
+.law-map {
     width: 100%;
 }
 
 /**/
 
-img.law-member-img {
+img.law-team-member-img {
     margin-bottom: 20px;
     margin-right: 20px;
     margin-top: 20px;
     height: 200px;
 }
+
+.law-team-member-name {
+    white-space: nowrap;
+}
+
 

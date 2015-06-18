@@ -52,9 +52,8 @@
                 <h4 class="modal-title" id="law-location-modal-label">Как нас найти</h4>
             </div>
             <div class="modal-body">
-                <iframe id="law-map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.7490858075194!2d34.80226350000001!3d50.9098587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41290220bcb33995%3A0xc4ae324cd5c5081e!2sBjelins&#39;koho+St%2C+3%2C+Sumy%2C+Sums&#39;ka+oblast!5e0!3m2!1sen!2sua!4v1433673571623"
-                        height="360" frameborder="0" style="border:0"></iframe>
+                <iframe class="law-map" height="360" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2515.753106969851!2d34.8051603!3d50.9097843!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41290220bcb33995%3A0xc4ae324cd5c5081e!2z0LLRg9C7LiDQkdGU0LvRltC90YHRjNC60L7Qs9C-LCAzLCDQodGD0LzQuCwg0KHRg9C80YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2s!4v1434572684028"></iframe>
             </div>
         </div>
     </div>
@@ -62,40 +61,42 @@
 
 <div id="law-header" class="law-color-1">
     <div class="container">
-        <img src="img/logo_with_text.png" alt="Логотип" class="hidden-xs pull-left law-header-logo">
-        <img src="img/logo_with_text.png" alt="Логотип"
-             class="img-responsive center-block visible-xs-block law-header-logo">
+        <img src="img/logo.png" alt="Логотип" class="hidden-xs pull-left law-header-logo">
+        <img src="img/logo.png" alt="Логотип" class="img-responsive center-block visible-xs-block law-header-logo">
 
-        <div class="pull-right hidden-xs">
-            <h4><img src="img/call_icon.png"/> +38 (099) 098 93 90</h4>
-            <h4>
+        <div class="pull-right hidden-xs law-header-contacts-big">
+            <p>
                 <img src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
-            </h4>
-            <h4>
+            </p>
+
+            <p>
                 <img src="img/facebook_icon.png"/> <a target="_blank"
                                                       href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
-            </h4>
-            <h4>
+            </p>
+        </div>
+        <div class="pull-right hidden-xs law-header-contacts-big">
+            <p><img src="img/call_icon.png"/> +38 (099) 098 93 90</p>
+
+            <p>
                 <img src="img/map_icon.png"/> <a data-toggle="modal"
                                                  data-target="#law-location-modal">г. Сумы, ул. Белинского 3</a>
-            </h4>
+            </p>
         </div>
     </div>
 
-
-    <div class="container visible-xs-block">
+    <div class="container visible-xs-block text-center">
         <div>
-            <h4><img src="img/call_icon.png"/> +38 (099) 098 93 90</h4>
-            <h4>
+            <p><img src="img/call_icon.png"/> +38 (099) 098 93 90</p>
+            <p>
                 <img src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
-            </h4>
-            <h4>
+            </p>
+            <p>
                 <img src="img/facebook_icon.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
-            </h4>
-            <h4>
+            </p>
+            <p>
                 <img src="img/map_icon.png"/> <a class="law-location" data-toggle="modal"
                                                  data-target="#law-location-modal">г. Сумы, ул. Белинского 3</a>
-            </h4>
+            </p>
         </div>
     </div>
 </div>
@@ -105,7 +106,7 @@
 
     <hr/>
 
-    <div class="container">
+    <div class="container text-center">
         <ul class="list-inline">
             <li>
                 <h4><a href="#/main-view">ГЛАВНАЯ</a></h4>
@@ -117,10 +118,10 @@
                 <h4><a href="#/team-view">НАША КОМАНДА</a></h4>
             </li>
             <li>
-                <h4><a href="#/main-view">КОНТАКТЫ</a></h4>
+                <h4><a href="#/contacts-view">КОНТАКТЫ</a></h4>
             </li>
             <li>
-                <h4><a href="#/main-view">БЛОГ</a></h4>
+                <h4><a href="">БЛОГ</a></h4>
             </li>
         </ul>
     </div>
@@ -132,6 +133,9 @@
 <![endif]-->
 
 <div ng-view></div>
+
+<br>
+<br>
 
 <div id="law-footer" class="law-background-color-1 law-color-1">
     <br>
@@ -148,42 +152,42 @@
                 <h4><a href="#/team-view">НАША КОМАНДА</a></h4>
             </li>
             <li>
-                <h4><a href="#/main-view">КОНТАКТЫ</a></h4>
+                <h4><a href="#/contacts-view">КОНТАКТЫ</a></h4>
             </li>
             <li>
-                <h4><a href="#/main-view">БЛОГ</a></h4>
+                <h4><a href="">БЛОГ</a></h4>
             </li>
         </ul>
 
         <div class="pull-right hidden-xs">
-            <h4><img src="img/call_icon.png"/> +38 (099) 098 93 90</h4>
-            <h4>
+            <p><img src="img/call_icon.png"/> +38 (099) 098 93 90</p>
+            <p>
                 <img src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
-            </h4>
-            <h4>
+            </p>
+            <p>
                 <img src="img/facebook_icon.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
-            </h4>
-            <h4>
+            </p>
+            <p>
                 <img src="img/map_icon.png"/> <a class="law-location" data-toggle="modal"
                                                  data-target="#law-location-modal">г. Сумы, ул. Белинского 3</a>
-            </h4>
+            </p>
         </div>
 
     </div>
 
     <div class="container">
-        <div class="visible-xs-block">
-            <h4><img src="img/call_icon.png"/> +38 (099) 098 93 90</h4>
-            <h4>
+        <div class="visible-xs-block text-center">
+            <p><img src="img/call_icon.png"/> +38 (099) 098 93 90</p>
+            <p>
                 <img src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
-            </h4>
-            <h4>
+            </p>
+            <p>
                 <img src="img/facebook_icon.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
-            </h4>
-            <h4>
+            </p>
+            <p>
                 <img src="img/map_icon.png"/> <a class="law-location" data-toggle="modal"
                                                  data-target="#law-location-modal">г. Сумы, ул. Белинского 3</a>
-            </h4>
+            </p>
         </div>
     </div>
 
