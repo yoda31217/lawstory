@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+Sitemap: http://dokaz.sumy.ua/sitemap.xml
+Host: dokaz.sumy.ua/
