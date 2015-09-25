@@ -11,6 +11,8 @@ angular.module('lawApp', ['ngRoute'])
       $('#features-carousel').carousel('next');
     });
 
+    $('html>head>link[href*="www.blogger.com"]').remove();
+
   }]);
 
 

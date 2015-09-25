@@ -6,12 +6,20 @@
 
 a {
     color: inherit !important;
-    text-decoration: underline;
     cursor: pointer;
+}
+
+a.btn {
+    text-decoration: none;
 }
 
 a:hover {
     color: #f7ac01 !important;
+    text-decoration: underline;
+}
+
+a.btn:hover {
+    color: #333 !important;
 }
 
 /**/

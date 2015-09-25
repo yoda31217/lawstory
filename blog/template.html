@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html lang="en" ng-app="lawApp" b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml'
+      xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+        <data:blog.pageTitle/>
+    </title>
+
+    <meta property="og:url" content="http://dokaz.sumy.ua/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" expr:content="data:blog.pageTitle"/>
+    <meta property="og:description"
+          content="Мы молодая, профессиональная и амбициозная юридическая фирма, которая предоставляет широкий спектр юридических услуг для частных и корпоративных клиентов. Мы нацелены на качество по доступным ценам."/>
+    <meta property="og:image" content="http://dokaz.sumy.ua/img/logo_fb_v001.png"/>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="http://dokaz.sumy.ua/img/favicon/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="http://dokaz.sumy.ua/img/favicon/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="http://dokaz.sumy.ua/img/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="http://dokaz.sumy.ua/img/favicon/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="http://dokaz.sumy.ua/img/favicon/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="http://dokaz.sumy.ua/img/favicon/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="http://dokaz.sumy.ua/img/favicon/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="http://dokaz.sumy.ua/img/favicon/apple-touch-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="http://dokaz.sumy.ua/img/favicon/apple-touch-icon-180x180.png"/>
+    <link rel="icon" type="image/png" href="http://dokaz.sumy.ua/img/favicon/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="http://dokaz.sumy.ua/img/favicon/favicon-194x194.png" sizes="194x194"/>
+    <link rel="icon" type="image/png" href="http://dokaz.sumy.ua/img/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="http://dokaz.sumy.ua/img/favicon/android-chrome-192x192.png" sizes="192x192"/>
+    <link rel="icon" type="image/png" href="http://dokaz.sumy.ua/img/favicon/favicon-16x16.png" sizes="16x16"/>
+    <link rel="manifest" href="http://dokaz.sumy.ua/img/favicon/manifest.json"/>
+    <link rel="shortcut icon" href="http://dokaz.sumy.ua/img/favicon/favicon.ico"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="http://dokaz.sumy.ua/img/favicon/mstile-144x144.png"/>
+    <meta name="msapplication-config" content="http://dokaz.sumy.ua/img/favicon/browserconfig.xml"/>
+    <meta name="theme-color" content="#ffffff"/>
+
+    <!-- Blogger include-->
+    <b:skin></b:skin>
+
+    <!-- Bootstrap -->
+    <link href="http://dokaz.sumy.ua/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="http://dokaz.sumy.ua/css/bootstrap-theme.min.css" rel="stylesheet"/>
+
+    <link href="http://dokaz.sumy.ua/css/app.css" rel="stylesheet"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-64303820-1', 'auto');
+        ga('require', 'linkid', 'linkid.js');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+<body ng-cloak="" class="ng-cloak">
+
+<div class="modal" id="law-location-modal" tabindex="-1" role="dialog" aria-labelledby="law-location-modal-label"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&amp;times;</span>
+                </button>
+                <h4 class="modal-title" id="law-location-modal-label">Как нас найти</h4>
+            </div>
+            <div class="modal-body">
+                <iframe class="law-map" height="360" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.583411947607!2d34.79191585306692!3d50.91292394825716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41290187815f2e11%3A0x595743d9f2c6d09e!2sRobitnycha+St%2C+57%2C+Sumy%2C+Sums&#39;ka+oblast!5e0!3m2!1sen!2sua!4v1434693874267"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+
+    <div id="law-header" class="law-color-1">
+        <div class="container">
+            <img src="http://dokaz.sumy.ua/img/logo.png" alt="Логотип" class="hidden-xs pull-left law-header-logo"/>
+            <img src="http://dokaz.sumy.ua/img/logo.png" alt="Логотип" class="img-responsive center-block visible-xs-block law-header-logo"/>
+
+            <div class="pull-right hidden-xs law-header-contacts-big">
+                <p>
+                    <img src="http://dokaz.sumy.ua/img/mail_icon.png"/> oles.lukyanenko@gmail.com
+                </p>
+
+                <p>
+                    <img src="http://dokaz.sumy.ua/img/facebook_icon.png"/> <a target="_blank"
+                                                                               href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                </p>
+            </div>
+            <div class="pull-right hidden-xs law-header-contacts-big">
+                <p><img src="http://dokaz.sumy.ua/img/call_icon.png"/> +38 (099) 098 93 90</p>
+
+                <p>
+                    <img src="http://dokaz.sumy.ua/img/map_icon.png"/> <a data-toggle="modal"
+                                                                          data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="container visible-xs-block text-center">
+            <div>
+                <p><img src="http://dokaz.sumy.ua/img/call_icon.png"/> +38 (099) 098 93 90</p>
+
+                <p>
+                    <img src="http://dokaz.sumy.ua/img/mail_icon.png"/> oles.lukyanenko@gmail.com
+                </p>
+
+                <p>
+                    <img src="http://dokaz.sumy.ua/img/facebook_icon.png"/> <a target="_blank"
+                                                                               href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                </p>
+
+                <p>
+                    <img src="http://dokaz.sumy.ua/img/map_icon.png"/> <a class="law-location" data-toggle="modal"
+                                                                          data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="law-menu" class="law-color-1">
+
+        <hr/>
+
+        <div class="container text-center">
+            <ul class="list-inline">
+                <li>
+                    <h4><a href="http://dokaz.sumy.ua/index.html">ГЛАВНАЯ</a></h4>
+                </li>
+                <li>
+                    <h4><a href="http://dokaz.sumy.ua/price.html">ЦЕНЫ</a></h4>
+                </li>
+                <li>
+                    <h4><a href="http://dokaz.sumy.ua/team.html">НАША КОМАНДА</a></h4>
+                </li>
+                <li>
+                    <h4><a href="http://dokaz.sumy.ua/contacts.html">КОНТАКТЫ</a></h4>
+                </li>
+                <li>
+                    <h4><a href="http://blog.dokaz.sumy.ua">БЛОГ</a></h4>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите
+    свой браузер</a> что бы улучшить отображение.</p>
+<![endif]-->
+
+<div class="container">
+
+    <br/>
+
+    <h2 class="law-color-1 text-center">Наш блог</h2>
+
+    <br/>
+
+    <b:section class='main' id='main' name='Main' showaddelement='no'>
+        <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
+            <b:includable id='main' var='top'>
+                <b:loop values='data:posts' var='post'>
+
+                    <!--posts start-->
+
+                    <b:if cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}'>
+
+                        <!--multi-posts view-->
+
+                        <b:if cond='not data:post.isFirstPost'>
+                            <hr/>
+                        </b:if>
+
+                        <h6 class="law-color-1">
+                            <data:post.dateHeader/>
+                        </h6>
+
+                        <h2>
+                            <a expr:href='data:post.link ? data:post.link : data:post.url'>
+                                <data:post.title/>
+                            </a>
+                        </h2>
+
+                        <h6>
+                            <img src="http://dokaz.sumy.ua/img/label_icon.png"/>
+                            <b:loop values='data:post.labels' var='label'>
+                                <a expr:href='data:label.url' class="law-color-1">
+                                    <data:label.name/>
+                                </a>
+                                <b:if cond='not data:label.isLast'>,</b:if>
+                            </b:loop>
+                        </h6>
+
+                        <data:post.body/>
+
+                        <br/>
+
+                        <a class="btn btn-default" role="button" expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
+                            Читать дальше
+                        </a>
+
+                        <h5>
+                            <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'>
+                                <data:post.commentLabelFull/>
+                            </a>
+                        </h5>
+
+                        <!--end of view-->
+
+                        <b:else/>
+
+                        <!--single-post view-->
+
+                        <h6 class="law-color-1">
+                            <data:post.dateHeader/>
+                        </h6>
+
+                        <h2>
+                            <data:post.title/>
+                        </h2>
+
+                        <h6>
+                            <img src="http://dokaz.sumy.ua/img/label_icon.png"/>
+                            <b:loop values='data:post.labels' var='label'>
+                                <a expr:href='data:label.url' class="law-color-1">
+                                    <data:label.name/>
+                                </a>
+                                <b:if cond='not data:label.isLast'>,</b:if>
+                            </b:loop>
+                        </h6>
+
+                        <data:post.body/>
+
+                        <br/>
+
+                        <h6>
+                            <img src="http://dokaz.sumy.ua/img/label_icon.png"/>
+                            <b:loop values='data:post.labels' var='label'>
+                                <a expr:href='data:label.url' class="law-color-1">
+                                    <data:label.name/>
+                                </a>
+                                <b:if cond='not data:label.isLast'>,</b:if>
+                            </b:loop>
+                        </h6>
+
+                        <!--comments-->
+
+                        <h3>
+                            <data:post.commentLabelFull/>
+                        </h3>
+
+                        <ul class="media-list">
+                            <b:loop values='data:post.comments' var='comment'>
+                                <li class="media">
+
+                                    <div class="media-left">
+                                        <data:comment.authorAvatarImage/>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="media-heading">
+                                            <strong class="law-color-1">
+                                                <b:if cond='data:comment.authorUrl'>
+                                                    <a expr:href='data:comment.authorUrl' target="_blank">
+                                                        <data:comment.author/>
+                                                    </a>
+                                                    <b:else/>
+                                                    <data:comment.author/>
+                                                </b:if>
+                                            </strong>
+                                            <span>  </span>
+                                            <small>
+                                                <a expr:href='data:comment.url' title='Ссылка на комментарий'>
+                                                    <data:comment.timestamp/>
+                                                </a>
+                                            </small>
+                                        </h5>
+                                        <div>
+                                            <data:comment.body/>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </b:loop>
+                        </ul>
+
+                        <h3>Отправить комментарий</h3>
+
+                        <b:if cond='data:mobile'>
+                            <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+                            <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410'
+                                    id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
+                            <b:else/>
+                            <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+                            <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410'
+                                    id='comment-editor' name='comment-editor' src='' width='100%'/>
+                        </b:if>
+                        <data:post.friendConnectJs/>
+                        <data:post.cmtfpIframe/>
+                        <script type='text/javascript'>
+                            BLOG_CMT_createIframe('<data:post.appRpcRelayPath/>');
+                        </script>
+
+
+                        <!--end of view-->
+
+                    </b:if>
+
+                    <!--posts end-->
+
+                </b:loop>
+            </b:includable>
+        </b:widget>
+    </b:section>
+
+</div>
+
+<br/>
+<br/>
+
+<footer>
+    <div id="law-footer" class="law-background-color-1 law-color-1 law-top-bottom-gray-border">
+        <br/>
+
+        <div class="container">
+            <ul class="list-unstyled pull-left">
+                <li>
+                    <h4><a href="http://dokaz.sumy.ua/index.html">ГЛАВНАЯ</a></h4>
+                </li>
+                <li>
+                    <h4><a href="http://dokaz.sumy.ua/price.html">ЦЕНЫ</a></h4>
+                </li>
+                <li>
+                    <h4><a href="http://dokaz.sumy.ua/team.html">НАША КОМАНДА</a></h4>
+                </li>
+                <li>
+                    <h4><a href="http://dokaz.sumy.ua/contacts.html">КОНТАКТЫ</a></h4>
+                </li>
+                <li>
+                    <h4><a href="http://blog.dokaz.sumy.ua">БЛОГ</a></h4>
+                </li>
+            </ul>
+
+            <div class="pull-right hidden-xs">
+                <p><img src="http://dokaz.sumy.ua/img/call_icon.png"/> +38 (099) 098 93 90</p>
+
+                <p>
+                    <img src="http://dokaz.sumy.ua/img/mail_icon.png"/> oles.lukyanenko@gmail.com
+                </p>
+
+                <p>
+                    <img src="http://dokaz.sumy.ua/img/facebook_icon.png"/> <a target="_blank"
+                                                                               href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                </p>
+
+                <p>
+                    <img src="http://dokaz.sumy.ua/img/map_icon.png"/> <a class="law-location" data-toggle="modal"
+                                                                          data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="visible-xs-block text-center">
+                <p><img src="http://dokaz.sumy.ua/img/call_icon.png"/> +38 (099) 098 93 90</p>
+
+                <p>
+                    <img src="http://dokaz.sumy.ua/img/mail_icon.png"/> oles.lukyanenko@gmail.com
+                </p>
+
+                <p>
+                    <img src="http://dokaz.sumy.ua/img/facebook_icon.png"/> <a target="_blank"
+                                                                               href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                </p>
+
+                <p>
+                    <img src="http://dokaz.sumy.ua/img/map_icon.png"/> <a class="law-location" data-toggle="modal"
+                                                                          data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
+                </p>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="container">
+            <br/>
+            <h6 class="text-center">© 2015. D O K A Z</h6>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </div>
+
+
+    <macro:include id='footer-sections' name='sections'>
+        <macro:param default='2' name='num' value='1'/>
+        <macro:param default='footer' name='idPrefix'/>
+        <macro:param default='foot' name='class'/>
+        <macro:param default='false' name='includeBottom'/>
+    </macro:include>
+    <!-- outside of the include in order to lock Attribution widget -->
+    <b:section class="foot" id='footer-3' showaddelement='no'>
+    </b:section>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://dokaz.sumy.ua/js/bootstrap.min.js"></script>
+
+<script src="http://dokaz.sumy.ua/js/angular.min.js"></script>
+<script src="http://dokaz.sumy.ua/js/angular-route.min.js"></script>
+
+<script src="http://dokaz.sumy.ua/js/app.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter31788171 = new Ya.Metrika({
+                    id: 31788171,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
+                });
+            } catch (e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/31788171" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+</body>
+
+<macro:includable id='sections' var='col'>
+    <macro:if cond='data:col.num == 0'>
+        <macro:else/>
+        <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-1&quot;' preferred='yes' showaddelement='yes'/>
+
+        <macro:if cond='data:col.num &gt;= 2'>
+            <table border='0' cellpadding='0' cellspacing='0' mexpr:class='&quot;section-columns columns-&quot; + data:col.num'>
+                <tbody>
+                <tr>
+                    <td class='first columns-cell'>
+                        <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-1&quot;'/>
+                    </td>
+
+                    <td class='columns-cell'>
+                        <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-2&quot;'/>
+                    </td>
+
+                    <macro:if cond='data:col.num &gt;= 3'>
+                        <td class='columns-cell'>
+                            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-3&quot;'/>
+                        </td>
+                    </macro:if>
+
+                    <macro:if cond='data:col.num &gt;= 4'>
+                        <td class='columns-cell'>
+                            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-4&quot;'/>
+                        </td>
+                    </macro:if>
+                </tr>
+                </tbody>
+            </table>
+
+            <macro:if cond='data:col.includeBottom'>
+                <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-3&quot;' showaddelement='no'/>
+            </macro:if>
+        </macro:if>
+    </macro:if>
+</macro:includable>
+
+</html>
