@@ -311,23 +311,26 @@
                             </b:loop>
                         </ul>
 
-                        <h3>Отправить комментарий</h3>
+                        <div id="comment-form">
+                            <h3>Отправить комментарий</h3>
 
-                        <b:if cond='data:mobile'>
-                            <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
-                            <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410'
-                                    id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
-                            <b:else/>
-                            <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
-                            <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410'
-                                    id='comment-editor' name='comment-editor' src='' width='100%'/>
-                        </b:if>
-                        <data:post.friendConnectJs/>
-                        <data:post.cmtfpIframe/>
-                        <script type='text/javascript'>
-                            BLOG_CMT_createIframe('<data:post.appRpcRelayPath/>');
-                        </script>
-
+                            <b:if cond='data:mobile'>
+                                <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+                                <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0'
+                                        height='410'
+                                        id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
+                                <b:else/>
+                                <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+                                <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0'
+                                        height='410'
+                                        id='comment-editor' name='comment-editor' src='' width='100%'/>
+                            </b:if>
+                            <data:post.friendConnectJs/>
+                            <data:post.cmtfpIframe/>
+                            <script type='text/javascript'>
+                                BLOG_CMT_createIframe('<data:post.appRpcRelayPath/>');
+                            </script>
+                        </div>
 
                         <!--end of view-->
 
