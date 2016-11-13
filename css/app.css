@@ -45,6 +45,14 @@ a.btn:hover {
     border-bottom: 1px solid #ddd;
 }
 
+.law-font-24 {
+    font-size: 24px !important;
+}
+
+.law-font-30 {
+    font-size: 30px !important;
+}
+
 /**/
 
 #law-header .law-header-logo {

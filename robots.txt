@@ -1,3 +1,4 @@
 User-Agent: *
 Disallow:
-Host: dokaz.sumy.ua/
+Host: dokaz.sumy.ua
+Sitemap: http://blog.dokaz.sumy.ua/sitemap.xml

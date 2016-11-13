@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="lawApp">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Юридическая помощь в Сумах - Доказ</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+    <title>Стоимость услуг юриста Доказ, цены</title>
+    <meta name="title" content="Стоимость услуг юриста Доказ, цены"/>
+    <meta name="description"
+          content="Нужен юрист в Сумах? Ищете юриста или адвоката в городе Сумы? Юридическая фирма «Доказ» поможет решить ваши проблемы. Качественно, в срок и по доступным ценам."/>
+    <meta name="keywords"
+          content="юрист Сумы, адвокат Сумы, юрист Суми, юридические услуги в Сумах, консультация юриста, бесплатная юридическая консультация"/>
+
+    <meta property="og:title" content="Стоимость услуг юриста Доказ, цены"/>
+    <meta property="og:site_name" content="Доказ"/>
     <meta property="og:url" content="http://dokaz.sumy.ua/"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Юридическая помощь в Сумах - Доказ"/>
     <meta property="og:description"
-          content="Мы молодая, профессиональная и амбициозная юридическая фирма, которая предоставляет широкий спектр юридических услуг для частных и корпоративных клиентов. Мы нацелены на качество по доступным ценам."/>
+          content="Нужен юрист в Сумах? Ищете юриста или адвоката в городе Сумы? Юридическая фирма «Доказ» поможет решить ваши проблемы. Качественно, в срок и по доступным ценам."/>
     <meta property="og:image" content="http://dokaz.sumy.ua/img/logo_fb_v001.png"/>
+    <meta property="og:type" content="website"/>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-194x194.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
-    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"/>
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="img/favicon/favicon-194x194.png" sizes="194x194"/>
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192"/>
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16"/>
+    <link rel="manifest" href="img/favicon/manifest.json"/>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png"/>
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml"/>
+    <meta name="theme-color" content="#ffffff"/>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
 
-    <link href="css/app.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -89,44 +96,44 @@
 
 <div id="law-header" class="law-color-1">
     <div class="container">
-        <img src="img/logo.png" alt="Логотип" class="hidden-xs pull-left law-header-logo">
-        <img src="img/logo.png" alt="Логотип" class="img-responsive center-block visible-xs-block law-header-logo">
+        <img src="img/logo.png" alt="Логотип Доказ" class="hidden-xs pull-left law-header-logo">
+        <img src="img/logo.png" alt="Логотип Доказ" class="img-responsive center-block visible-xs-block law-header-logo">
 
         <div class="pull-right hidden-xs law-header-contacts-big">
             <p>
-                <img src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
+                <img alt="контакты доказ" src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
             </p>
 
             <p>
-                <img src="img/facebook_icon.png"/> <a target="_blank"
-                                                      href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                <img alt="facebook доказ" src="img/facebook_icon.png"/> <a target="_blank"
+                                                                           href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
             </p>
         </div>
         <div class="pull-right hidden-xs law-header-contacts-big">
-            <p><img src="img/call_icon.png"/> +38 (099) 098 93 90</p>
+            <p><img alt="телефон доказ" src="img/call_icon.png"/> +38 (099) 098 93 90</p>
 
             <p>
-                <img src="img/map_icon.png"/> <a data-toggle="modal"
-                                                 data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
+                <img alt="адрес доказ" src="img/map_icon.png"/> <a data-toggle="modal"
+                                                                   data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
             </p>
         </div>
     </div>
 
     <div class="container visible-xs-block text-center">
         <div>
-            <p><img src="img/call_icon.png"/> +38 (099) 098 93 90</p>
+            <p><img alt="телефон доказ" src="img/call_icon.png"/> +38 (099) 098 93 90</p>
 
             <p>
-                <img src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
+                <img alt="контакты доказ" src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
             </p>
 
             <p>
-                <img src="img/facebook_icon.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                <img alt="facebook доказ" src="img/facebook_icon.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
             </p>
 
             <p>
-                <img src="img/map_icon.png"/> <a class="law-location" data-toggle="modal"
-                                                 data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
+                <img alt="адрес доказ" src="img/map_icon.png"/> <a class="law-location" data-toggle="modal"
+                                                                   data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
             </p>
         </div>
     </div>
@@ -166,7 +173,7 @@
 <div class="container">
     <br>
 
-    <h2 class="law-color-1 text-center">Наши цены</h2>
+    <h1 class="law-color-1 text-center law-font-30">Стоимость юридических услуг</h1>
 
     <br>
 
@@ -174,8 +181,8 @@
         который приходится
         решать нашей команде, всегда имеет свои особенности и сложности.</p>
 
-    <p class="text-justify">Поэтому <a href="team.html">команда «Доказ»</a> не ограничивается данным перечнем услуг, а помогает прицениться по самым
-        популярным из них.</p>
+    <p class="text-justify">Поэтому <a href="team.html">команда «Доказ»</a> не ограничивается данным перечнем услуг, а помогает прицениться
+        по самым популярным из них.</p>
 
     <p class="text-justify">Конкретную стоимость за свою работу мы всегда готовы обосновать в письменном виде.</p>
 
@@ -243,19 +250,19 @@
         </ul>
 
         <div class="pull-right hidden-xs">
-            <p><img src="img/call_icon.png"/> +38 (099) 098 93 90</p>
+            <p><img alt="телефон доказ" src="img/call_icon.png"/> +38 (099) 098 93 90</p>
 
             <p>
-                <img src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
+                <img alt="контакты доказ" src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
             </p>
 
             <p>
-                <img src="img/facebook_icon.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                <img alt="facebook доказ" src="img/facebook_icon.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
             </p>
 
             <p>
-                <img src="img/map_icon.png"/> <a class="law-location" data-toggle="modal"
-                                                 data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
+                <img alt="адрес доказ" src="img/map_icon.png"/> <a class="law-location" data-toggle="modal"
+                                                                   data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
             </p>
         </div>
 
@@ -263,19 +270,19 @@
 
     <div class="container">
         <div class="visible-xs-block text-center">
-            <p><img src="img/call_icon.png"/> +38 (099) 098 93 90</p>
+            <p><img alt="телефон доказ" src="img/call_icon.png"/> +38 (099) 098 93 90</p>
 
             <p>
-                <img src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
+                <img alt="контакты доказ" src="img/mail_icon.png"/> oles.lukyanenko@gmail.com
             </p>
 
             <p>
-                <img src="img/facebook_icon.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                <img alt="facebook доказ" src="img/facebook_icon.png"/> <a target="_blank" href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
             </p>
 
             <p>
-                <img src="img/map_icon.png"/> <a class="law-location" data-toggle="modal"
-                                                 data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
+                <img alt="адрес доказ" src="img/map_icon.png"/> <a class="law-location" data-toggle="modal"
+                                                                   data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
             </p>
         </div>
     </div>
@@ -314,23 +321,28 @@
                     accurateTrackBounce: true,
                     webvisor: true
                 });
-            } catch (e) { }
+            } catch (e) {
+            }
         });
 
         var n = d.getElementsByTagName("script")[0],
                 s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://mc.yandex.ru/metrika/watch.js";
 
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
+        } else {
+            f();
+        }
     })(document, window, "yandex_metrika_callbacks");
 </script>
 <noscript>
-    <div><img src="https://mc.yandex.ru/watch/31788171" style="position:absolute; left:-9999px;" alt=""/></div>
+    <div><img alt="метрика" src="https://mc.yandex.ru/watch/31788171" style="position:absolute; left:-9999px;"/></div>
 </noscript>
 <!-- /Yandex.Metrika counter -->
 

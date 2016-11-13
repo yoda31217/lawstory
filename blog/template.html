@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html lang="en" ng-app="lawApp" b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml'
-      xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+      xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data'
+      xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
     <title>
         <data:blog.pageTitle/>
     </title>
+    <meta name="title" expr:content="data:blog.pageTitle"/>
+    <meta name="description"
+          content="Нужен юрист в Сумах? Ищете юриста или адвоката в городе Сумы? Юридическая фирма «Доказ» поможет решить ваши проблемы. Качественно, в срок и по доступным ценам."/>
+    <meta name="keywords"
+          content="юрист Сумы, адвокат Сумы, юрист Суми, юридические услуги в Сумах, консультация юриста, бесплатная юридическая консультация"/>
 
-    <meta property="og:url" content="http://dokaz.sumy.ua/"/>
-    <meta property="og:type" content="website"/>
     <meta property="og:title" expr:content="data:blog.pageTitle"/>
+    <meta property="og:site_name" content="Доказ"/>
+    <meta property="og:url" expr:content="data:blog.url"/>
     <meta property="og:description"
-          content="Мы молодая, профессиональная и амбициозная юридическая фирма, которая предоставляет широкий спектр юридических услуг для частных и корпоративных клиентов. Мы нацелены на качество по доступным ценам."/>
-    <meta property="og:image" content="http://dokaz.sumy.ua/img/logo_fb_v001.png"/>
+          content="Нужен юрист в Сумах? Ищете юриста или адвоката в городе Сумы? Юридическая фирма «Доказ» поможет решить ваши проблемы. Качественно, в срок и по доступным ценам."/>
+    <b:if cond="data:blog.postImageUrl">
+        <meta property="og:image" expr:content="data:blog.postImageUrl"/>
+    </b:if>
+    <b:if cond="not data:blog.postImageUrl">
+        <meta property="og:image" content="http://dokaz.sumy.ua/img/logo_fb_v001.png"/>
+    </b:if>
+
+    <meta property="og:type" content="website"/>
 
     <link rel="apple-touch-icon" sizes="57x57" href="http://dokaz.sumy.ua/img/favicon/apple-touch-icon-57x57.png"/>
     <link rel="apple-touch-icon" sizes="60x60" href="http://dokaz.sumy.ua/img/favicon/apple-touch-icon-60x60.png"/>
@@ -73,6 +87,8 @@
 
     </script>
 
+    <meta name='yandex-verification' content='5b8ba802f2c10b94'/>
+
 </head>
 
 <body ng-cloak="" class="ng-cloak">
@@ -99,45 +115,48 @@
 
     <div id="law-header" class="law-color-1">
         <div class="container">
-            <img src="http://dokaz.sumy.ua/img/logo.png" alt="Логотип" class="hidden-xs pull-left law-header-logo"/>
-            <img src="http://dokaz.sumy.ua/img/logo.png" alt="Логотип" class="img-responsive center-block visible-xs-block law-header-logo"/>
+            <img src="http://dokaz.sumy.ua/img/logo.png" alt="Логотип Доказ" class="hidden-xs pull-left law-header-logo"/>
+            <img src="http://dokaz.sumy.ua/img/logo.png" alt="Логотип Доказ"
+                 class="img-responsive center-block visible-xs-block law-header-logo"/>
 
             <div class="pull-right hidden-xs law-header-contacts-big">
                 <p>
-                    <img src="http://dokaz.sumy.ua/img/mail_icon.png"/> oles.lukyanenko@gmail.com
+                    <img alt="контакты доказ" src="http://dokaz.sumy.ua/img/mail_icon.png"/> oles.lukyanenko@gmail.com
                 </p>
 
                 <p>
-                    <img src="http://dokaz.sumy.ua/img/facebook_icon.png"/> <a target="_blank"
-                                                                               href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                    <img alt="facebook доказ" src="http://dokaz.sumy.ua/img/facebook_icon.png"/> <a target="_blank"
+                                                                                                    href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
                 </p>
             </div>
             <div class="pull-right hidden-xs law-header-contacts-big">
-                <p><img src="http://dokaz.sumy.ua/img/call_icon.png"/> +38 (099) 098 93 90</p>
+                <p><img alt="телефон доказ" src="http://dokaz.sumy.ua/img/call_icon.png"/> +38 (099) 098 93 90</p>
 
                 <p>
-                    <img src="http://dokaz.sumy.ua/img/map_icon.png"/> <a data-toggle="modal"
-                                                                          data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
+                    <img alt="адрес доказ" src="http://dokaz.sumy.ua/img/map_icon.png"/> <a data-toggle="modal"
+                                                                                            data-target="#law-location-modal">г. Сумы, ул.
+                    Рабочая 57</a>
                 </p>
             </div>
         </div>
 
         <div class="container visible-xs-block text-center">
             <div>
-                <p><img src="http://dokaz.sumy.ua/img/call_icon.png"/> +38 (099) 098 93 90</p>
+                <p><img alt="телефон доказ" src="http://dokaz.sumy.ua/img/call_icon.png"/> +38 (099) 098 93 90</p>
 
                 <p>
-                    <img src="http://dokaz.sumy.ua/img/mail_icon.png"/> oles.lukyanenko@gmail.com
+                    <img alt="контакты доказ" src="http://dokaz.sumy.ua/img/mail_icon.png"/> oles.lukyanenko@gmail.com
                 </p>
 
                 <p>
-                    <img src="http://dokaz.sumy.ua/img/facebook_icon.png"/> <a target="_blank"
-                                                                               href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                    <img alt="facebook доказ" src="http://dokaz.sumy.ua/img/facebook_icon.png"/> <a target="_blank"
+                                                                                                    href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
                 </p>
 
                 <p>
-                    <img src="http://dokaz.sumy.ua/img/map_icon.png"/> <a class="law-location" data-toggle="modal"
-                                                                          data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
+                    <img alt="адрес доказ" src="http://dokaz.sumy.ua/img/map_icon.png"/> <a class="law-location" data-toggle="modal"
+                                                                                            data-target="#law-location-modal">г. Сумы, ул.
+                    Рабочая 57</a>
                 </p>
             </div>
         </div>
@@ -180,7 +199,7 @@
 
     <br/>
 
-    <h2 class="law-color-1 text-center">Наш блог</h2>
+    <h1 class="law-color-1 text-center law-font-30">Наш блог</h1>
 
     <br/>
 
@@ -210,7 +229,7 @@
                         </h2>
 
                         <h6>
-                            <img src="http://dokaz.sumy.ua/img/label_icon.png"/>
+                            <img alt="теги доказ" src="http://dokaz.sumy.ua/img/label_icon.png"/>
                             <b:loop values='data:post.labels' var='label'>
                                 <a expr:href='data:label.url' class="law-color-1">
                                     <data:label.name/>
@@ -223,7 +242,7 @@
 
                         <br/>
 
-                        <a class="btn btn-default" role="button" expr:href='data:post.url' expr:title='data:post.title'>
+                        <a class="btn btn-default" role="button" expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
                             Читать дальше
                         </a>
 
@@ -248,7 +267,7 @@
                         </h2>
 
                         <h6>
-                            <img src="http://dokaz.sumy.ua/img/label_icon.png"/>
+                            <img alt="теги доказ" src="http://dokaz.sumy.ua/img/label_icon.png"/>
                             <b:loop values='data:post.labels' var='label'>
                                 <a expr:href='data:label.url' class="law-color-1">
                                     <data:label.name/>
@@ -262,7 +281,7 @@
                         <br/>
 
                         <h6>
-                            <img src="http://dokaz.sumy.ua/img/label_icon.png"/>
+                            <img alt="теги доказ" src="http://dokaz.sumy.ua/img/label_icon.png"/>
                             <b:loop values='data:post.labels' var='label'>
                                 <a expr:href='data:label.url' class="law-color-1">
                                     <data:label.name/>
@@ -367,25 +386,26 @@
                     <h4><a href="http://dokaz.sumy.ua/contacts.html">КОНТАКТЫ</a></h4>
                 </li>
                 <li>
-                    <h4><a href="http://blog.dokaz.sumy.ua">БЛОГ</a></h4>
+                    <h4><a href="http://blog.dokaz.sumy.ua/">БЛОГ</a></h4>
                 </li>
             </ul>
 
             <div class="pull-right hidden-xs">
-                <p><img src="http://dokaz.sumy.ua/img/call_icon.png"/> +38 (099) 098 93 90</p>
+                <p><img alt="телефон доказ" src="http://dokaz.sumy.ua/img/call_icon.png"/> +38 (099) 098 93 90</p>
 
                 <p>
-                    <img src="http://dokaz.sumy.ua/img/mail_icon.png"/> oles.lukyanenko@gmail.com
+                    <img alt="контакты доказ" src="http://dokaz.sumy.ua/img/mail_icon.png"/> oles.lukyanenko@gmail.com
                 </p>
 
                 <p>
-                    <img src="http://dokaz.sumy.ua/img/facebook_icon.png"/> <a target="_blank"
-                                                                               href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                    <img alt="facebook доказ" src="http://dokaz.sumy.ua/img/facebook_icon.png"/> <a target="_blank"
+                                                                                                    href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
                 </p>
 
                 <p>
-                    <img src="http://dokaz.sumy.ua/img/map_icon.png"/> <a class="law-location" data-toggle="modal"
-                                                                          data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
+                    <img alt="адрес доказ" src="http://dokaz.sumy.ua/img/map_icon.png"/> <a class="law-location" data-toggle="modal"
+                                                                                            data-target="#law-location-modal">г. Сумы, ул.
+                    Рабочая 57</a>
                 </p>
             </div>
 
@@ -393,20 +413,21 @@
 
         <div class="container">
             <div class="visible-xs-block text-center">
-                <p><img src="http://dokaz.sumy.ua/img/call_icon.png"/> +38 (099) 098 93 90</p>
+                <p><img alt="телефон доказ" src="http://dokaz.sumy.ua/img/call_icon.png"/> +38 (099) 098 93 90</p>
 
                 <p>
-                    <img src="http://dokaz.sumy.ua/img/mail_icon.png"/> oles.lukyanenko@gmail.com
+                    <img alt="контакты доказ" src="http://dokaz.sumy.ua/img/mail_icon.png"/> oles.lukyanenko@gmail.com
                 </p>
 
                 <p>
-                    <img src="http://dokaz.sumy.ua/img/facebook_icon.png"/> <a target="_blank"
-                                                                               href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
+                    <img alt="facebook доказ" src="http://dokaz.sumy.ua/img/facebook_icon.png"/> <a target="_blank"
+                                                                                                    href="http://fb.com/oles.lukyanenko">fb.com/oles.lukyanenko</a>
                 </p>
 
                 <p>
-                    <img src="http://dokaz.sumy.ua/img/map_icon.png"/> <a class="law-location" data-toggle="modal"
-                                                                          data-target="#law-location-modal">г. Сумы, ул. Рабочая 57</a>
+                    <img alt="адрес доказ" src="http://dokaz.sumy.ua/img/map_icon.png"/> <a class="law-location" data-toggle="modal"
+                                                                                            data-target="#law-location-modal">г. Сумы, ул.
+                    Рабочая 57</a>
                 </p>
             </div>
         </div>
@@ -457,23 +478,28 @@
                     accurateTrackBounce: true,
                     webvisor: true
                 });
-            } catch (e) { }
+            } catch (e) {
+            }
         });
 
         var n = d.getElementsByTagName("script")[0],
                 s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://mc.yandex.ru/metrika/watch.js";
 
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
+        } else {
+            f();
+        }
     })(document, window, "yandex_metrika_callbacks");
 </script>
 <noscript>
-    <div><img src="https://mc.yandex.ru/watch/31788171" style="position:absolute; left:-9999px;" alt=""/></div>
+    <div><img alt="метрика" src="https://mc.yandex.ru/watch/31788171" style="position:absolute; left:-9999px;"/></div>
 </noscript>
 <!-- /Yandex.Metrika counter -->
 
