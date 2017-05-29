@@ -4,8 +4,12 @@
 
 /**/
 
+* {
+    color: #535456;
+}
+
 a {
-    color: inherit !important;
+    color: inherit;
     cursor: pointer;
 }
 
@@ -33,11 +37,11 @@ a.btn:hover {
 }
 
 .law-color-1 {
-    color: #535456;
+    color: #535456 !important;
 }
 
 .law-color-2 {
-    color: #f7ac01;
+    color: #f7ac01 !important;
 }
 
 .law-top-bottom-gray-border {
@@ -55,14 +59,19 @@ a.btn:hover {
 
 /**/
 
-#law-header .law-header-logo {
+#law-header .law-header-logo-big {
+    width: 247px;
+    margin-top: 28px;
+}
+
+#law-header .law-header-logo-small {
     width: 247px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 #law-header .law-header-contacts-big {
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 20px;
 }
 
