@@ -43,5 +43,21 @@
         <loc>http://dokaz.sumy.ua/ukr/contacts.html</loc>
         <changefreq>daily</changefreq>
     </url>
+    <url>
+        <loc>http://dokaz.sumy.ua/eng/index.html</loc>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>http://dokaz.sumy.ua/eng/price.html</loc>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>http://dokaz.sumy.ua/eng/team.html</loc>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>http://dokaz.sumy.ua/eng/contacts.html</loc>
+        <changefreq>daily</changefreq>
+    </url>
 
 </urlset>
